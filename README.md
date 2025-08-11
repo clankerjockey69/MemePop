@@ -1,46 +1,37 @@
-🎉 MemePop
+# MemePop — Viral App Prototype
 
-A fun and easy-to-use web app for creating and sharing memes.
+This is a GitHub-ready prototype for **MemePop**, a small viral app demo with:
+- Node/Express backend (SQLite) + Socket.io realtime
+- React frontend (plain Create React App style)
+- Short share links, upvotes, views, trending score, referral code param
 
-⸻
+## Quick start (local)
 
-✨ Features
-	•	🖼 Upload images or choose from pre-loaded meme templates
-	•	✏ Customizable captions with emojis, fonts, and styling
-	•	📥 Download your meme instantly or share it directly to social media
+Requirements: Node.js 18+ and npm.
 
-⸻🛠 Installation
-bash 
-# Clone the repository
-git clone https://github.com/clankerjockey69/MemePop.git
-
-# Navigate into the project folder
-cd MemePop
-
-# Install dependencies
+1. Start backend
+```bash
+cd backend
 npm install
-
-# Start the development server
 npm start
+```
+Backend runs at `http://localhost:4000`.
 
-🧰 Tech Stack
-	•	Frontend: React / HTML / CSS
-	•	Backend: Node.js / Express (if applicable)
-	•	Styling: Tailwind / Bootstrap / Custom CSS (replace with actual)
+2. Start frontend
+```bash
+cd frontend
+npm install
+npm start
+```
+Frontend runs at `http://localhost:3000`.
 
-⸻
+## Repo structure
+```
+meme-pop/
+├─ backend/
+└─ frontend/
+```
 
-💡 Roadmap
-	•	🎨 More meme templates
-	•	📱 Mobile optimization
-	•	🗂 Meme gallery for browsing community creations
-
-⸻
-
-🤝 Contributing
-
-Pull requests are welcome! For major changes, please open an issue first to discuss what you’d like to change.
-
-📜 License
-
-This project is licensed under the MIT License.
+## Notes
+- This is a prototype intended for learning / hacking — **do not** use in production without adding authentication, rate limits, validation, and security hardening.
+- To deploy, set `REACT_APP_API_URL` in the frontend `.env` to point at your backend.
